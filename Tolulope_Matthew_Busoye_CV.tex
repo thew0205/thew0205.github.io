@@ -1,0 +1,308 @@
+%----------------------------------------------------------------------------------------
+% TOLULOPE MATTHEW BUSOYE — CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.8cm, right=1.8cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+% Colours
+\definecolor{accent}{RGB}{20, 60, 120}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    urlcolor=accent,
+    linkcolor=accent
+}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\vspace{-4pt}\rule{\linewidth}{0.6pt}\vspace{2pt}]
+
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+% No page numbers
+\pagestyle{empty}
+
+% List settings
+\setlist[itemize]{noitemsep, topsep=1pt, parsep=0pt, leftmargin=1.2em}
+
+% Custom commands
+\newcommand{\cventry}[4]{%
+  \noindent\textbf{#1} \hfill \textit{#2}\\%
+  \textit{#3} \hfill \small{#4}\\[-4pt]%
+}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% HEADER
+%----------------------------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries\color{accent} TOLULOPE MATTHEW BUSOYE}\\[4pt]
+  \small
+  No 68, Bankole Street, Orita Challenge, Ibadan, Oyo State, Nigeria\\[3pt]
+  +234 816 244 5154 \quad
+  \href{mailto:busoyetm@gmail.com}{busoyetm@gmail.com} \quad
+  \href{https://www.linkedin.com/in/tolulopematthewbusoye}{linkedin.com/in/tolulopematthewbusoye}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+
+Academically driven Electrical and Electronic Engineering graduate---best graduating student of the
+department and Faculty of Technology at the University of Ibadan. Strong technical and prototyping
+skills with a deep passion for research in embedded systems, edge AI, and intelligent energy
+management. Natural leader with proven ability to mentor students and deliver impactful engineering projects.
+
+\noindent\textbf{Interests:} Robotics $\cdot$ Cyber-Physical Systems $\cdot$ Edge AI $\cdot$ Embedded Systems
+$\cdot$ Internet of Things $\cdot$ Computer Architecture $\cdot$ Intelligent Energy Management $\cdot$ Renewable Energy
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{B.Sc.\ Electrical and Electronic Engineering}{2019 -- 2025}{University of Ibadan, Nigeria}{CGPA: 3.94/4.00 --- First Class}
+\begin{itemize}
+  \item Best Graduating Student of the Department and Faculty of Technology
+  \item Studied electronic circuits, microprocessors and embedded systems, electric machines, programming, and cross-disciplinary engineering courses
+  \item \textbf{Thesis:} Development of a Commercialised Solar-Based Mobile Energy Hub
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Senior Secondary Certificate Examination}{2015 -- 2017}{Pacesetters Comprehensive College}{}
+\begin{itemize}
+  \item Ranked among the top 5\%; received the best student award in Physics, Mathematics, and Economics
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% RESEARCH EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+
+\cventry{Lead Student Investigator}{2024 -- 2025}{Thesis: Development of a Commercialised Solar-Based Mobile Energy Hub}{}
+\noindent\textit{Supervisor: Prof.\ O.\ O.\ Olakanmi} \hfill \href{https://doi.org/10.13140/RG.2.2.10441.86886}{Paper Link}\\[-2pt]
+\begin{itemize}
+  \item Reviewed relevant literature, developed a research proposal, and created presentation materials
+  \item Designed circuit schematics and prototyped a mobile solar-based energy hub, interfacing multiple microcontrollers, sensors, and actuators
+  \item Integrated hardware and software systems; wrote firmware in C/C++ and mobile application in Flutter/Dart
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS AND ARTICLES
+%----------------------------------------------------------------------------------------
+\section{Publications and Articles}
+
+\begin{itemize}
+  \item Busoye, T. (June 2025). \textit{Development of a Commercialised Solar-Based Mobile Energy Hub}
+  (Undergraduate thesis, University of Ibadan).
+  \href{https://doi.org/10.13140/RG.2.2.10441.86886}{DOI: 10.13140/RG.2.2.10441.86886}
+
+  \item Busoye, T. (Sep 2025). \textit{Inside TensorFlow Lite Micro on RP2040/RP2350: Setup and Project
+  Structure Explained}. Medium.
+  \href{https://medium.com/@switches0011/inside-tensorflow-lite-micro-on-rp2040-rp2350-setup-and-project-structure-explained-3f15a970a3f2}{Link}
+
+  \item Busoye, T. (in preparation). \textit{A Compile-Time and Memory-Efficient Approach to SunSpec
+  Models with FlatBuffers and Direct Modbus Register Mapping}. Draft manuscript.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Work Experience}
+
+\cventry{Embedded Systems Engineer}{Jun 2025 -- Present}{Powerstart Integrated Technologies Limited (PowerLabs), Lagos}{}
+\begin{itemize}
+  \item Research and evaluate sensors for integration with Powerstart Autonomous Infrastructure (PAI) devices
+  \item Implement SunSpec protocol to enable communication with SunSpec-compliant equipment
+  \item Develop a hardware testing framework and integration-testing workflow supporting test-driven development
+  \item Create and maintain a coding style guide to standardise hardware-related software development
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Embedded Systems Intern}{Jan 2024 -- Jun 2024}{Powerstart Integrated Technologies Limited (PowerLabs), Lagos}{}
+\begin{itemize}
+  \item Designed and developed a PAI device for power event capture based on Raspberry Pi Pico MCU
+  \item Collaborated on software components for transmitting power events to Amazon AWS cloud endpoints
+  \item Designed schematics and PCBs for Power Stool, a Bluetooth-controllable desk
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Hardware \& Electronics Intern}{Jun 2023 -- Sep 2023}{Reeddi Technologies, Lagos}{}
+\begin{itemize}
+  \item Repaired 50 Reeddi Capsules, Energy Boxes, and Big Energy devices
+  \item Designed a charge station for 100 Reeddi Capsules and set up Big Energy installations
+  \item Developed device tracking systems
+\end{itemize}
+
+\vspace{4pt}
+\cventry{STEM Tutor \& Engineer}{2021 -- 2024}{Switches Technology, University of Ibadan}{}
+\begin{itemize}
+  \item Tutored and trained over 10 students in Arduino, Raspberry Pi, and embedded systems
+  \item Designed innovative projects in embedded systems, IoT, and AI---including a Smart Distribution Board, Smart Bin, and Responsive Prosthetic Leg
+  \item Oversaw 3D printing projects including a Head Mount Mouse and a 6-DOF Robotic Arm
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Electrical \& Electronic Engineering Intern}{Apr 2022 -- May 2022}{Crittall-Hope Nigeria Limited}{}
+\begin{itemize}
+  \item Maintained single and three-phase machines; contributed to roller shutter production
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Electrical \& Electronic Engineering Intern}{Aug 2020 -- Mar 2021}{God'sWill Technology Concept}{}
+\begin{itemize}
+  \item Installed solar and inverter systems; performed electrical installations and electronic repairs
+  \item Received foundational training in electrical systems and electronic repair techniques
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Teaching Experience}
+
+\cventry{Academic Tutor}{2021 -- 2023}{Faculty of Technology, University of Ibadan}{}
+\begin{itemize}
+  \item Tutored over 70 fellow students in multiple courses including Elementary Computer Programming (FORTRAN)
+  \item Tutored over 100 first-year students in PHY103 and MAT121
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Academic Tutor}{2021 -- 2022}{Toppers Tutorial, University of Ibadan}{}
+\begin{itemize}
+  \item Tutored over 100 first-year students in PHY103 and MAT111
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Academic Tutor}{2021 -- 2025}{Mountain of Fire and Miracle Ministries Campus Fellowship, UI}{}
+\begin{itemize}
+  \item Prepared academic materials and organised tutorials for colleagues and junior students
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% LEADERSHIP AND VOLUNTEERING
+%----------------------------------------------------------------------------------------
+\section{Leadership and Volunteering}
+
+\cventry{President, Society of Electrical \& Electronic Engineering Students (SEEES)}{2023/2024}{University of Ibadan}{}
+\begin{itemize}
+  \item Responsible for over 270 electrical and electronic engineering students
+  \item Organised an industrial visit to Egbin Power Plc, Nigeria's largest power-generating station
+  \item Coordinated workshops bridging theoretical knowledge and industry-required practical skills
+  \item Increased financial resources for the next administration by over 2{,}000\%
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Lead \& Co-Lead, Hardware \& IoT, Google Developer Student Club (GDSC)}{2021/22 -- 2022/23}{University of Ibadan}{}
+\begin{itemize}
+  \item Organised technical sessions and hardware workshops for over 50 students
+  \item Served as Technical Lead, TechQuest GDSC UI 2023
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Public Relations Officer, SEEES}{2021 -- 2023}{University of Ibadan}{}
+\begin{itemize}
+  \item Led publicity and communication for all society activities; served as official spokesperson
+\end{itemize}
+
+\vspace{4pt}
+\cventry{Student Representative Council Member, 10th Assembly}{2022/2023}{Student Union, University of Ibadan}{}
+\begin{itemize}
+  \item Represented 100 students in constituency; responsible for policy-making
+  \item Member, UISU House Committee on Audit and Electoral Matters
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% SCHOLARSHIPS AND AWARDS
+%----------------------------------------------------------------------------------------
+\section{Scholarships and Awards}
+
+\begin{itemize}
+  \item \textbf{3rd Place}---Africa Energy Challenge, SPE Africa Annual Student Congress \hfill Apr 2025
+  \item \textbf{1st Place}---SPE Energy Challenge, Student Technical Symposium \& Exhibition, Nigeria \hfill Mar 2024
+  \item NNPC/TotalEnergies National Merit Scholarship \hfill 2021 -- 2024
+  \item Federal Scholarship Board (FSB), Nigeria \hfill 2021 -- 2023
+  \item SPE Lagos Section Male Undergraduate Scholarship (Engineering) \hfill 2023
+  \item Agbami Medical and Engineering Professionals Scholarship Award \hfill 2019 -- 2022
+  \item Most Outstanding in Academics---University of Ibadan Student Union \hfill 2023/24
+  \item 5$\times$ Dean's Honour List---Faculty of Technology \hfill 2018/19 -- 2023/24
+  \item Most Outstanding Member---Junior Chamber International Nigeria, UI \hfill 2022/24
+  \item 4$\times$ Academic Excellence Awards---MFMCF UI \hfill 2020/21 -- 2023/24
+  \item Silver Medal (1500m), Bronze Medal (400m)---TESA Dean's Cup \hfill 2021/22
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% WORKSHOPS AND CONFERENCES
+%----------------------------------------------------------------------------------------
+\section{Workshops and Conferences}
+
+\begin{itemize}
+  \item Adapting to Change, Edinburgh Earth Initiative, University of Edinburgh \hfill Nov 2024
+  \item Nigeria Annual International Conference and Exhibition, SPE Nigeria \hfill Aug 2025
+  \item SPE Africa Annual Student Congress, Society of Petroleum Engineers, Africa \hfill Apr 2025
+  \item Student Technical Symposium \& Exhibition, SPE Nigeria \hfill Mar 2024
+  \item Student Professional Awareness Conference, IEEE, University of Ibadan \hfill Jul 2023
+  \item Exhibitor, Energy Searchlight 2.0, Energy Club, University of Ibadan \hfill Feb 2025
+  \item Exhibitor, Ambizero Conference, Energy Club \& SPE, University of Ibadan \hfill Jun 2024
+  \item Artificial Intelligence and Clean Energy (AI4CE) Workshop, First Technical University \hfill 2021
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Selected Projects}
+
+\begin{itemize}
+  \item Automated Solar Power Trading and Distribution Unit
+  \item Hybrid Solar/Grid Charging Station for 100 Reeddi Capsules
+  \item STM32 PCB Design and Fabrication
+  \item PCB Design for Smart Desk \& Power Stool (PowerLabs)
+  \item Automatic Solar Powered Traffic Light (RAINigeria)
+  \item Smart Energy Monitoring and Distribution Board (SPE, STSE)
+  \item Bluetooth Programmable Display (Arduino + Flutter)
+  \item Mobile Controllable Robot Car $\cdot$ Responsive Prosthetic Leg $\cdot$ Wireless Controllable Dustbin System
+  \item Assembly Language Projects: LED Counter, Binary Counter, LCD Control
+  \item Over 15 Solar Installations
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills and Languages}
+
+\noindent
+\begin{tabularx}{\linewidth}{@{} l X @{}}
+\textbf{Technical:}  & Circuit design, PCB design, Solar and inverter installation, Electronic prototyping \\[2pt]
+\textbf{Software:}   & C/C++, Python, KiCad, Docker, Git, Flutter/Dart, \LaTeX{}, Microsoft Office, Canva \\[2pt]
+\textbf{Strengths:}  & Fast learning, Communication, Leadership, Time management, Adaptability, Creativity \\[2pt]
+\textbf{Languages:}  & English (fluent), Yoruba (native) \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL AFFILIATIONS
+%----------------------------------------------------------------------------------------
+\section{Professional Affiliations}
+
+\begin{itemize}
+  \item Graduate Member, Nigerian Society of Engineers (GMNSE)
+  \item Student Member, Society of Petroleum Engineers (SPE)
+  \item Student Member, Institute of Electrical and Electronics Engineers (IEEE)
+  \item Member, Society of Electrical and Electronic Engineering Students (SEEES), UI
+  \item Member, Energy Club, University of Ibadan
+  \item Student Member, Google Developer Student Club (GDSC)
+  \item Member, Junior Chamber International Nigeria (JCIN)
+\end{itemize}
+
+\end{document}
