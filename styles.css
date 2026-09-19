@@ -430,7 +430,73 @@ img {
   justify-content: center;
 }
 
+.project-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-highlight {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  background: linear-gradient(135deg, #ffffff, #f5f9ff);
+  border: 1px solid rgba(29, 78, 216, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-highlight:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.08);
+}
+
+.project-tag {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-bottom: 0.95rem;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.project-highlight h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+
+.project-highlight p {
+  margin: 0 0 1.2rem;
+  color: var(--text-soft);
+}
+
+.project-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.project-link::after {
+  content: "→";
+  margin-left: 0.45rem;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover::after {
+  transform: translateX(3px);
+}
+
 @media (max-width: 900px) {
+
   .hero-grid,
   .about-grid,
   .awards-grid,
@@ -458,6 +524,10 @@ img {
 
   .contact-links {
     justify-content: flex-start;
+  }
+
+  .project-feature-grid {
+    grid-template-columns: 1fr;
   }
 }
 
