@@ -118,6 +118,7 @@ img {
   max-width: 62ch;
   color: rgba(226, 232, 240, 0.82);
   font-size: 1.06rem;
+  text-align: justify;
 }
 
 .cta-row {
@@ -253,6 +254,83 @@ img {
 .research-article a {
   color: var(--accent);
   font-weight: 600;
+}
+
+.award-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.award-list li {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.award-list li:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.award-title {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.award-desc {
+  margin-top: 0.2rem;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+.articles-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.article-item {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
+}
+
+.article-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.article-heading h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.article-heading h3 a {
+  color: var(--text);
+}
+
+.article-heading h3 a:hover {
+  color: var(--accent);
+}
+
+.article-date {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.article-item p {
+  margin: 0;
+  color: var(--text-soft);
 }
 
 .about-grid p {

@@ -6,3 +6,5 @@
 *.fdb_latexmk
 *.synctex.gz
 .temp_issues/
+*_temp*
+Steven_Kolawole_CV.pdf
