@@ -41,6 +41,10 @@
   \textit{#3} \hfill \small{#4}\\[-4pt]%
 }
 
+\usepackage{graphicx}
+\newcommand*{\thickdot}{\mathbin{\vcenter{\hbox{\scalebox{0.7}{$\bullet$}}}}}
+
+
 %----------------------------------------------------------------------------------------
 \begin{document}
 
@@ -52,11 +56,11 @@
   \href{https://thew0205.github.io}{thew0205.github.io} \quad
   \href{mailto:busoyetm@gmail.com}{busoyetm@gmail.com} \quad
   \href{https://scholar.google.com/citations?user=iPShkhUAAAAJ&hl=en}{Google Scholar} \quad
-  \href{https://www.linkedin.com/in/tolulopematthewbusoye}{Linkedin}
+  \href{https://www.linkedin.com/in/tolulopematthewbusoye}{LinkedIn}
 \end{center}
 
-\noindent\textbf{Research Interests:} TinyML \& Edge AI $\cdot$ Embedded
-Systems $\cdot$ Cyber-Physical Systems $\cdot$ Intelligent Energy Systems $\cdot$ Internet of Things $\cdot$ Renewable Energy
+\noindent\textbf{Research Interests:} TinyML \& Edge AI $\thickdot$ Embedded
+Systems $\thickdot$ Cyber-Physical Systems $\thickdot$ Intelligent Energy Systems $\thickdot$ Renewable Energy $\thickdot$ Internet of Things $\thickdot$ Real-Time Systems
 
 %----------------------------------------------------------------------------------------
 % EDUCATION
@@ -89,22 +93,21 @@ Systems $\cdot$ Cyber-Physical Systems $\cdot$ Intelligent Energy Systems $\cdot
 \section{Research Experience}
 
 \noindent\textbf{TinyML \& Edge AI Lead}, ML Collective \hfill Apr 2026 -- Present\\
-Remote. Mentored by Steven Kolawole and independent researchers within the ML Collective network.
+Mentored by Steven Kolawole and independent researchers within the ML Collective network.
 Model optimisation and deployment on microcontrollers for real-world applications; focus on
 energy-efficient embedded inference.
 
 \vspace{6pt}
-\noindent\textbf{Hardware \& TinyML Researcher}, Powerstart Integrated Technologies (PowerLabs) \hfill 2025 -- 2026\\
-Lagos, Nigeria. Supervised by Dr.\ Eigbe Egbonbon-aye. Optimised TinyML models for deployment on
+\noindent\textbf{Hardware \& TinyML Researcher}, Powerstart Integrated Technologies Limited (PowerLabs) \hfill 2025 -- 2026\\
+Supervised by Dr.\ Eigbe Egbonbon-aye. Optimised TinyML models for deployment on
 microcontrollers and embedded systems with as little as 2kB of available memory. Developed deep
 microcompression pipeline combining structured pruning and bit-packed quantisation; work accepted
 to ICML 2026 Global South in AI Workshop.
 
 \vspace{6pt}
 \noindent\textbf{Lead Student Investigator}, University of Ibadan \hfill 2024 -- 2025\\
-Ibadan, Nigeria. Supervised by Prof.\ O.\ O.\ Olakanmi. Developed a commercialised solar-based
-mobile energy hub for off-grid communities. Designed full-system hardware: circuit schematics,
-PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
+Supervised by Prof.\ O.\ O.\ Olakanmi. Developed a commercialised solar-based
+mobile energy hub for off-grid communities. Designed a full-stack hardware system: from circuit schematics and veroboard prototyping to embedded C/C++ firmware and a companion Flutter/Dart mobile app.
 
 
 %----------------------------------------------------------------------------------------
@@ -163,17 +166,17 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 
 \cventry{Embedded Systems Engineer}{Jun 2025 -- Present}{Powerstart Integrated Technologies Limited (PowerLabs), Lagos}{}
 \begin{itemize}
-  \item Led the development of the emobility charging station for energy trading.
-  \item Research and evaluate sensors for integration with Powerstart Autonomous Infrastructure (PAI) devices
-  \item Implement SunSpec protocol to enable communication with SunSpec-compliant equipment
-  \item Develop a hardware testing framework and integration-testing workflow supporting test-driven development
+  \item Led the development of the PAI mobility battery charging station for energy trading.
+  \item Implemented SunSpec standard into PAI V2, enabling seamless integration with over 10 different DER devices.
+  \item Ported existing firmware to Zephyr RTOS and developed a custom Zephyr board support package (BSP) for PowerLabs hardware.
+  \item Developed a hardware testing framework and integration-testing workflow supporting test-driven development
   \item Create and maintain a coding style guide to standardise hardware-related software development
 \end{itemize}
 
 \vspace{4pt}
 \cventry{Embedded Systems Intern}{Jan 2024 -- Jun 2024}{Powerstart Integrated Technologies Limited (PowerLabs), Lagos}{}
 \begin{itemize}
-  \item Designed and developed a PAI device for power event capture based on Raspberry Pi Pico MCU
+  \item Designed and developed a PAI V1 device for power event capture based on Raspberry Pi Pico MCU
   \item Collaborated on software components for transmitting power events to Amazon AWS cloud endpoints
   \item Designed schematics and PCBs for Power Stool, a Bluetooth-controllable desk
 \end{itemize}
@@ -183,7 +186,7 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 \begin{itemize}
   \item Repaired 50 Reeddi Capsules, Energy Boxes, and Big Energy devices
   \item Designed a charge station for 100 Reeddi Capsules and set up Big Energy installations
-  \item Developed device tracking systems
+  \item Developed Reeddi Capsule tracking systems
 \end{itemize}
 
 \vspace{4pt}
@@ -210,9 +213,9 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 \section{Leadership and Volunteering}
 \cventry{Lead, ML Systems Study group}{2026}{ML Collective}{}
 \begin{itemize}
-  \item Managed over 20 students in to understand the foundational principles of Machine learning systems using the cs249r\_book by Harvard University.
+  \item Managed over 20 students to understand the foundational principles of machine learning systems using the cs249r\_book by Harvard University.
 
-  \item Led weekly study sessions where we discussed about each week's chapter and programming module implementation.
+  \item Led weekly study sessions where we discussed each week's chapter and programming module implementation.
 \end{itemize}
 \cventry{President (2023/24) \& PRO (2021--2023), Society of Electrical \& Electronic Engineering Students (SEEES)}{2021 -- 2024}{University of Ibadan}{}
 \begin{itemize}
@@ -226,7 +229,7 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 \vspace{4pt}
 \cventry{Lead \& Co-Lead, Hardware \& IoT, Google Developer Student Club (GDSC)}{2021/22 -- 2022/23}{University of Ibadan}{}
 \begin{itemize}
-  \item Organised technical sessions and hardware workshops for over 50 students
+  \item Organised technical sessions and workshops on hardware, IoT, and embedded systems for over 50 students.
   \item Served as Technical Lead, TechQuest GDSC UI 2023
 \end{itemize}
 
@@ -246,7 +249,7 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
   \item \textbf{3rd Place---Africa Energy Challenge, SPE Africa Annual Student Congress} \hfill Apr 2025\\
         {\footnotesize Pan-African student energy-innovation competition hosted by the Society of Petroleum Engineers.}
   \item \textbf{1st Place---SPE Energy Challenge, Student Technical Symposium \& Exhibition, Nigeria} \hfill Mar 2024\\
-        \footnotesize National student energy-engineering competition among universities by the Society of Petroleum Engineers, Nigeria.
+        \footnotesize National student energy-engineering competition among Nigerian universities, organised by the Society of Petroleum Engineers, Nigeria.
   \item \textbf{NNPC/TotalEnergies National Merit Scholarship} \hfill 2021 -- 2024\\
         \footnotesize Competitive national scholarship for top-performing Nigerian STEM undergraduates.
   \item \textbf{Federal Scholarship Board (FSB), Nigeria} \hfill 2021 -- 2023\\
@@ -271,7 +274,7 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 \section{Workshops and Conferences}
 
 \begin{itemize}
-  \item Behind the hood with Zephyr: Bringing up STM32G473 board, Poerstart Integrated Technologies \hfill Sep 2026
+  \item Under the Hood with Zephyr: Bringing up the STM32G473 Board, Powerstart Integrated Technologies \hfill Sep 2026
   \item Adapting to Change, Edinburgh Earth Initiative, University of Edinburgh \hfill Nov 2024
   \item Nigeria Annual International Conference and Exhibition, SPE Nigeria \hfill Aug 2025
   \item Student Professional Awareness Conference, IEEE, University of Ibadan \hfill Jul 2023
@@ -315,10 +318,10 @@ PCB layout, firmware in C/C++, and mobile application in Flutter/Dart.
 
 \noindent
 \begin{tabularx}{\linewidth}{@{} l X @{}}
-  \textbf{Technical:} & Circuit design, PCB design, Solar and inverter installation, Electronic prototyping                                  \\[2pt]
-  \textbf{Software:}  & C/C++, Python, Zephyr, Linux, Buildroot, Pytorch,KiCad, Docker, Git, Flutter/Dart, \LaTeX{}, Microsoft Office, Canva \\[2pt]
-  \textbf{Strengths:} & Fast learning, Communication, Leadership, Time management, Adaptability, Creativity                                  \\[2pt]
-  \textbf{Languages:} & English (fluent), Yoruba (native)                                                                                    \\
+  \textbf{Technical:} & Circuit design, PCB design, Solar and inverter installation, Electronic prototyping                                   \\[2pt]
+  \textbf{Software:}  & C/C++, Python, Zephyr, Linux, Buildroot, Pytorch, KiCad, Docker, Git, Flutter/Dart, \LaTeX{}, Microsoft Office, Canva \\[2pt]
+  \textbf{Strengths:} & Fast learning, Communication, Leadership, Time management, Adaptability, Creativity                                   \\[2pt]
+  \textbf{Languages:} & English (fluent), Yoruba (native)                                                                                     \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
